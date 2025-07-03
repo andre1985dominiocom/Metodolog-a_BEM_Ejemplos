@@ -38,7 +38,7 @@ header {
     line-height: 1.5;
 }
 
-.card__button-success {
+.button--success {
     display: inline-block;
     background-color: #1074f7;
     color: white;
@@ -48,7 +48,7 @@ header {
     margin-top: 10px;
 }
 
-.card__button-back {
+.button--back {
     display: inline-block;
     background-color: white;
     color: #000;
@@ -58,22 +58,31 @@ header {
     margin-top: 10px;
 }
 
-.card__button-success:hover,
-.card__button-back:hover {
+.button--success:hover,
+.button--back:hover {
     opacity: 0.8;
 }
 
-.card__button-success:active,
-.card__button-back:active {
+.button--success:active,
+.button--back:active {
     transform: scale(0.98);
 }
 
-.card__button-success:focus,
-.card__button-back:focus {
+.button--success:focus,
+.button--back:focus {
     outline: none;
     box-shadow: 0 0 0 2px rgba(16, 116, 247, 0.5);
 }
 
-.card__button-back:focus {
+.button--back:focus {
     box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.5);
+}
+
+.menu {
+    position: fixed;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    
 }
