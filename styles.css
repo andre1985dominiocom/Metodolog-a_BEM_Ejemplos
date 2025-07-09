@@ -1,3 +1,4 @@
+/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -17,7 +18,8 @@ header {
     text-align: center;
 }
 
-.card {
+/* 1. Componente tarjeta de producto*/
+.card { /* Bloque */
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -26,19 +28,19 @@ header {
     max-width: 400px;
 }
 
-.card__image {
+.card__image { /* Elemento */
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-.card__description {
+.card__description { /* Elemento */
     margin-top: 10px;
     font-size: 16px;
     line-height: 1.5;
 }
 
-.button--success {
+.button--success { /* Modificador */
     display: inline-block;
     background-color: #1074f7;
     color: white;
@@ -48,7 +50,7 @@ header {
     margin-top: 10px;
 }
 
-.button--back {
+.button--back { /* Modificador */
     display: inline-block;
     background-color: white;
     color: #000;
@@ -58,6 +60,7 @@ header {
     margin-top: 10px;
 }
 
+/* Estados de los botones */
 .button--success:hover,
 .button--back:hover {
     opacity: 0.8;
@@ -78,11 +81,198 @@ header {
     box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.5);
 }
 
-.menu {
-    position: fixed;
+/* 2. Componente menú de navegación */
+.menu { /* Bloque */
+    position: relative;
     background-color: gray;
     color: white;
     border-radius: 10px;
+    margin: 30px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+
+}
+
+.menu__item { /* Elemento */
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu__item--active { /* Modificador */
+    background-color: #71ecfc34;
+    color: black;
+    border-radius: 10px;
+}
+
+.menu__item:hover {
+    background-color: #71ecfc34;
+    color: black;
+}
+
+.menu__item:active {
+    transform: scale(0.98);
+}
+
+.menu__item:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(16, 116, 247, 0.5);
+}
+
+/* 3. Componente formulario de contacto */
+.form { /* Bloque */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.form_input { /* Elemento */
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form__button--submit { /* Modificador */
+    display: inline-block;
+    background-color: #1074f7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.form__button--submit:hover {
+    background-color: #0d5bbf;
+}
+/* 4. Componente lista de tareas */
+.task-list { /* Bloque */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+}
+
+.task-list__item { /* Elemento */
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-list__item { /* Elemento */
+    border-bottom: none;
+}
+
+.task-list__item--completed { /* Modificador */
+    text-decoration: line-through;
+    color: #45f34e;
+}
+
+.task-list__button { /* Elemento */
+    display: inline-block;
+    background-color: #1074f7;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+.task-list__button:hover { /* Elemento */
+    background-color: #0d5bbf;
+}
+
+/* 5. Componente galería de imágenes */
+.galeria {
+    text-align: center;
+}
+
+.galeria_item { /* Elemento */
+    display: inline-block;
+    vertical-align: top;
+    width: 300px;
     margin: 10px;
-    
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.galeria__image { /* Elemento */
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.galeria__button { /* Elemento */
+    display: inline-block;
+    margin: 5px;
+    background-color: #1074f7;
+    padding: 10px 15px;
+    border-radius: 10px;
+    border: none;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.galeria__button--full { /* Modificador */
+    background-color: #71ecfc34;
+    color: black;
+}
+
+.galeria__button--back { /* Modificador */
+    background-color: white;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+.galeria__button--back:hover { /* Modificador */
+    background-color: #f0f0f0;
+}
+
+.galeria__button--full:hover { /* Modificador */
+    background-color: #0d5bbf;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .menu {
+        font-size: 14px;
+    }
+
+    .menu__item {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .form {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .form_input {
+        width: calc(100% - 20px);
+    }
+
+    .form__button--submit {
+        width: 100%;
+        text-align: center;
+    }
 }

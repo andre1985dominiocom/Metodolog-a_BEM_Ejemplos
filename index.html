@@ -8,20 +8,55 @@
 </head>
 <body>
     <header>
-        <div class="card">
+        <div class="menu"> <!-- Bloque -->
+            <nav>
+                <ul>
+                    <li><a class="menu__item--active" href="#home">Inicio</a></li> <!-- Modificador -->
+                    <li><a class="menu__item" href="#informacion">Información</a></li> <!-- Elemento -->
+                    <li><a class="menu__item" href="#contactos">Contactos</a></li> <!-- Elemento -->
+                </ul>
+            </nav>
+        </div>
+        <div class="card"> <!-- Bloque -->
             <img src="Assets/suministros-limpieza-hogar-icono-vectorial-botellas_107791-28598.avif" alt="Descripción de la imagen" class="card__image">
-            <span class="card__description">Paisaje Natural</span><br>
-            <button class="button--success">Ver más</button>
-            <button class="button--back">Volver</button>
+            <span class="card__description">Paisaje Natural</span><br> <!-- Elemento -->
+            <button class="button--success">Ver más</button> <!-- Modificador -->
+            <button class="button--back">Volver</button> <!-- Modificador -->
         </div>
-        <div class="menu">
-            <ul class="menu__item">
-                <nav class="menu__item--active">
-                    <li><a href="#home">Inicio</a></li>
-                    <li><a href="#informacion">Información</a></li>
-                    <li><a href="#contactos">Contactos</a></li>
-                </nav>
+        <div class="form">
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input class="form_input" type="text" id="nombre" name="nombre" required>
+                <label for="email">Email:</label>
+                <input class="form_input" type="email" id="email" name="email" required>
+                <button type="submit" class="form__button--submit">Enviar</button>
+            </form>
         </div>
+            <ul class="task-list"> <!-- Bloque -->
+                <li class="task-list__item"> <!-- Elemento -->
+                    <input type="checkbox" class="task-list__chekbox"> <!-- Elemento -->
+                    <span class="task-list__text">Hacer la tarea de Diseño de web</span> <!-- Elemento -->
+                    <button class="task-list__button">Eliminar</button> <!-- Elemento -->
+                </li>
+                <li class="task-list__item task-list__item--completed"> <!-- Modificador -->
+                    <input type="checkbox" class="task-list__chekbox" checked> <!-- Elemento -->
+                    <span class="task-list__text">Lavar el baño</span> <!-- Elemento -->
+                    <button class="task-list__button">Eliminar</button> <!-- Elemento -->
+                </li>
+            </ul>
+            <div class="galeria"> <!-- Bloque -->
+                <div class="galeria__item">
+                    <img src="Assets/Mapa_mundi_blanco.PNG" alt="Mapa Mundi" class="galeria__image"> <!-- Elemento -->
+                    <button class="galeria__button galeria__button--full">Ver Mapa Completo</button> <!-- Modificador -->
+                    <button class="galeria__button galeria__button--back">Volver</button> <!-- Modificador -->
+                </div>
+            </div>
+                <div class="galeria__item"> <!-- Elemento -->
+                    <img src="Assets/pngtree-world-map-with-animals-and-birds-poster-image_1512050.jpg" alt="Mapa Mundi con Animales" class="galeria__image"> <!-- Elemento -->
+                    <button class="galeria__button galeria__button--full">Ver Mapa Completo</button> <!-- Modificador -->
+                    <button class="galeria__button galeria__button--back">Volver</button> <!-- Modificador -->
+                </div>
+            </div>
     </header>
 </body>
 </html>
