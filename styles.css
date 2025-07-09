@@ -246,6 +246,40 @@ header {
     background-color: #0d5bbf;
 }
 
+.alert { /* Bloque */
+    background-color: #cbfc71c0;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 400px;
+    text-align: center;
+}
+
+.alert__icon { /* Elemento */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('Assets/Icon-removebg-preview.png');
+    background-size: cover;
+    vertical-align: middle;
+}
+
+.alert__title { /* Elemento */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.alert__message { /* Elemento */
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.alert--success { /* Modificador */
+    background-color: #71ecfc34;
+    color: black;
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
     .card {
