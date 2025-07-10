@@ -246,6 +246,7 @@ header {
     background-color: #0d5bbf;
 }
 
+/* 6. Componente de alerta o notificación. */ 
 .alert { /* Bloque */
     background-color: #cbfc71c0;
     color: black;
@@ -279,6 +280,136 @@ header {
     background-color: #71ecfc34;
     color: black;
 }
+
+/* 7. Componente de tabla de datos.*/
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.datos { /* Bloque */
+    color: #000;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.datos__column {
+    padding: 10px;
+    color: #1074f7;
+    background-color: #45f34e;
+}
+
+.datos__row {
+    padding: 10px;
+    color: #200252;
+    background-color: wheat;
+}
+
+.datos__row--modified {
+    color: gold;
+    background-color: red;
+}
+
+/*8. Componente de pie de página */
+.citacion {
+    font-size: 20px;
+    margin: 20px;
+    padding: 10px;
+    color: #693;
+    align-items: center;
+}
+
+.citacion__page {
+    font-size: 20px;
+    background-color: #200252;
+}
+
+.citacion__page--modified {
+    font-size: 15px;
+    color: #1074f7;
+    background-color: #333;
+}
+/* 9. Componente de pestañas (tabs). */
+.tab { /* Bloque */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    color: #1074f7; 
+}
+
+.tab__item { /* Elemento */
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    color: #45f34e;
+}
+
+.tab__link { /* Elemento */
+    display: inline-block;
+    color: salmon;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tab__link--modified { /* Modificador */
+    display: inline-block;
+    color: #1074f7;
+    background-color: chartreuse;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.tab__link:hover { /* Estado de hover Elemento */
+    background-color: red;
+    transition: 0.5s;
+}
+
+.tab__link--modified:hover { /* Estado de hover Elemento */
+    background-color: #ccc;
+    transition: 0.5s;
+}
+
+/* 10. Componente de selector de categorías. */
+.categorias { /* Bloque */
+    background-color: #f830e7;
+    padding: 10px;
+    margin: 20px;
+}
+
+.categorias__select { /* Elemento */
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.categorias__option { /* Elemento */
+    display: inline;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100px;
+    color: #45f34e;
+    background-color: rgba(255, 217, 0, 0.342);
+}
+
+.categorias__option--modified { /* Modificador */
+    display: inline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 100px;
+    color: firebrick;
+    background-color: #1074f754;
+}
+
+/* 11.Componente de sistema de calificaciones. */
 
 /* Media Queries */
 @media (max-width: 600px) {

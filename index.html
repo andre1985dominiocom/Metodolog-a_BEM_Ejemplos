@@ -8,6 +8,7 @@
 </head>
 <body>
     <header>
+        <!-- 2. Componente de menú de navegación. -->
         <div class="menu"> <!-- Bloque -->
             <nav>
                 <ul>
@@ -17,12 +18,14 @@
                 </ul>
             </nav>
         </div>
+        <!-- 1. Componente de tarjeta de producto. -->
         <div class="card"> <!-- Bloque -->
             <img src="Assets/suministros-limpieza-hogar-icono-vectorial-botellas_107791-28598.avif" alt="Descripción de la imagen" class="card__image">
             <span class="card__description">Paisaje Natural</span><br> <!-- Elemento -->
             <button class="button--success">Ver más</button> <!-- Modificador -->
             <button class="button--back">Volver</button> <!-- Modificador -->
         </div>
+        <!-- 3. Componente de formulario de contacto. -->
         <div class="form">
             <form action="#" method="post">
                 <label for="nombre">Nombre:</label>
@@ -32,11 +35,13 @@
                 <button type="submit" class="form__button--submit">Enviar</button>
             </form>
         </div>
+        <!-- 6. Componente de alerta o notificación. -->
         <div class="alert alert--success"> <!-- Modificador -->
             <span class="alert__icon"></span> <!-- Elemento -->
             <strong class="alert__title">¡Éxito!</strong> <!-- Elemento -->
             <p class="alert__message">La operación se realizó correctamente.</p> <!-- Elemento -->
         </div>
+        <!-- 4. Componente de lista de tareas. -->
             <ul class="task-list"> <!-- Bloque -->
                 <li class="task-list__item"> <!-- Elemento -->
                     <input type="checkbox" class="task-list__chekbox"> <!-- Elemento -->
@@ -49,6 +54,7 @@
                     <button class="task-list__button">Eliminar</button> <!-- Elemento -->
                 </li>
             </ul>
+            <!-- 5. Componente de galería de imágenes. -->
             <div class="galeria"> <!-- Bloque -->
                 <div class="galeria__item">
                     <img src="Assets/Mapa_mundi_blanco.PNG" alt="Mapa Mundi" class="galeria__image"> <!-- Elemento -->
@@ -62,7 +68,50 @@
                     <button class="galeria__button galeria__button--back">Volver</button> <!-- Modificador -->
                 </div>
             </div>
-
-    </header>
+            <!-- 7. Componente de tabla de datos. -->
+            <div>
+                <table class="datos"> <!-- Bloque -->
+                    <tr class="datos__column"> <!-- Elemento -->
+                        <th class="datos__column">Nombres</th> <!-- Elemento -->
+                        <th class="datos_column">Apellidos</th> <!-- Elemento -->
+                    </tr>
+                    <tr class="datos__row"> <!-- Elemento -->
+                        <td class="datos__row--modified">Sergio Andrés</td> <!-- Modificador -->
+                        <td class="datos_row--modified">Álvarez Lache</td> <!-- Modificador -->
+                    </tr>
+                </table>
+            </div>
+            <!-- 8. Componente de pie de página. -->
+            <footer class="citacion"> <!-- Bloque -->
+                <article class="citacion__page">Elementos de pie de página</article> <!-- Elemento -->
+                <nav class="citacion__page"> <!-- Elemento -->
+                <li class="citacion__page--modified"> <!-- Modificador -->
+                    <a href="https://developer.mozilla.org/es/docs/Web/HTML/Reference/Elements/footer" class="citacion__page--modified">
+                        Consultar la información de los autores</a> <!-- Modificador -->
+                </li>
+                </nav>
+                <!-- 9. Componente de pestañas (tabs). -->
+                 <ul class="tab" role="tablist"> <!-- Bloque -->
+                    <li class="tab__item" role="presentacion"> <!-- Elemento -->
+                        <a class="tab__link" data-bs-toggle="tab" href="#" role="tab">Tab 1</a>  <!-- Elemento -->                     
+                    </li>
+                    <li class="tab__item" role="presentacion"> <!-- Elemento -->
+                        <a class="tab__link" data-bs-toggle="tab" href="#" role="tab">Tab 2</a> <!-- Elemento -->
+                    </li>
+                    <li class="tab__link--modified" role="presentacion"> <!-- Modificador -->
+                        <a class="tab__link--modified" data-bs-toggle="tab" href="#" role="tab">Tab 3</a> <!-- Modificador -->
+                    </li>
+                 </ul>
+                </footer>
+                <!-- 10. Componente de selector de categorías. -->
+                <div class="categorias"> <!-- Bloque -->
+                    <select class="categorias__select" id="categorias__select"> <!-- Elemento -->
+                        <option class="categorias__option" value="opción 1">Opción 1</option> <!-- Elemento -->
+                        <option class="categorias__option--modified" value="opción 2">Opción 2</option> <!-- Modificador -->
+                        <option class="categorias__option--modified" value="opción 3">Opción 3</option> <!-- Modificador -->
+                    </select>
+                </div>
+                <!-- 11.Componente de sistema de calificaciones. -->
+        </header>
 </body>
 </html>
