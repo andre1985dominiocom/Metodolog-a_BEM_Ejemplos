@@ -410,6 +410,24 @@ table {
 }
 
 /* 11.Componente de sistema de calificaciones. */
+.calificaciones { /* Bloque */
+    background-color: #18ebeb;
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+.calificaciones__rating { /* Elemento */
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.calificaciones__rating--modified { /* Modificador */
+    color: hotpink;
+}
 
 /* Media Queries */
 @media (max-width: 600px) {
