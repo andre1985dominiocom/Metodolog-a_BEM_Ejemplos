@@ -429,6 +429,163 @@ table {
     color: hotpink;
 }
 
+/* 12. Componente de lista de reproducción de video. */
+.video { /* Bloque */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.video__soource { /* Elemento */
+    display: block;
+    margin: 10px 0;
+    color: #1074f7;
+    text-decoration: none;
+}
+
+.video__source--modified { /* Modificador */
+    color: #45f34e;
+    font-weight: bold;
+}
+
+/* 13.	Componente de barra lateral sidebar. */
+.sidebar { /* Bloque */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 300px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.sidebar__menu { /* Elemento */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar__title { /* Elemento */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #200252;
+}
+
+.sidebar__item { /* Elemento */
+    display: block;
+    margin: 10px 0;
+    color: #1074f7;
+    text-decoration: none;
+}
+
+.sidebar__link { /* Elemento */
+    margin: 10px 0;
+    color: #1074f7;
+    text-decoration: underline;
+}
+
+.sidebar__item--modified { /* Modificador */
+    color: #45f34e;
+    font-weight: bold;
+}
+
+.sidebar__link:hover { /* Estado de hover Elemento */
+    color: #45f34e;
+    transition: 0.5s;
+}
+
+.sidebar__link--modified { /* Modificador */
+    color: #f830e7;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.sidebar__link--modified:hover { /* Estado de hover Elemento */
+    color: #30bff8;
+    transition: 0.5s;
+}
+
+/* 14. Componente resumen de carrito */
+.cart-summary { /* Componente de resumen de carrito */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 400px;
+    margin-right: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-summary__title { /* Elemento */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #200252;
+}
+
+.cart-summary__item { /* Elemento */
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.cart-summary__count { /* Elemento */
+    font-weight: bold;
+    color: #1074f7;
+}
+
+.cart-summary__total { /* Elemento */
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.cart-summary__amount { /* Elemento */
+    color: #45f34e;
+}
+
+.cart-summary__checkout { /* Elemento */
+    display: inline-block;
+    background-color: #1074f7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* 15. Componente de publicación en blog. */
+.blog-post { /* Bloque */
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.blog-post__title { /* Elemento */
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #200252;
+}
+
+.blog-post__content { /* Elemento */
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.blog-post__read-more--modified { /* Elemento */
+    display: inline-block;
+    background-color: #1074f7;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
 /* Media Queries */
 @media (max-width: 600px) {
     .card {

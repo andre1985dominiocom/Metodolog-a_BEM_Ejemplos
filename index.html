@@ -8,6 +8,13 @@
 </head>
 <body>
     <header>
+        <!-- 14. Componente resumen de carrito. -->
+        <div class="cart-summary"> <!-- Bloque -->
+            <h2 class="cart-summary__title">Resumen del Carrito</h2> <!-- Elemento -->
+            <p class="cart-summary__item">Total de artículos: <span class="cart-summary__count">3</span></p> <!-- Elemento -->
+            <p class="cart-summary__total">Total: $<span class="cart-summary__amount">150.00</span></p> <!-- Elemento -->
+            <button class="cart-summary__checkout">Proceder al Pago</button> <!-- Elemento -->
+        </div>
         <!-- 2. Componente de menú de navegación. -->
         <div class="menu"> <!-- Bloque -->
             <nav>
@@ -91,9 +98,9 @@
                 </li>
                 </nav>
                 <!-- 9. Componente de pestañas (tabs). -->
-                 <ul class="tab" role="tablist"> <!-- Bloque -->
+                <ul class="tab" role="tablist"> <!-- Bloque -->
                     <li class="tab__item" role="presentacion"> <!-- Elemento -->
-                        <a class="tab__link" data-bs-toggle="tab" href="#" role="tab">Tab 1</a>  <!-- Elemento -->                     
+                        <a class="tab__link" data-bs-toggle="tab" href="#" role="tab">Tab 1</a>  <!-- Elemento -->
                     </li>
                     <li class="tab__item" role="presentacion"> <!-- Elemento -->
                         <a class="tab__link" data-bs-toggle="tab" href="#" role="tab">Tab 2</a> <!-- Elemento -->
@@ -101,7 +108,7 @@
                     <li class="tab__link--modified" role="presentacion"> <!-- Modificador -->
                         <a class="tab__link--modified" data-bs-toggle="tab" href="#" role="tab">Tab 3</a> <!-- Modificador -->
                     </li>
-                 </ul>
+                </ul>
                 </footer>
                 <!-- 10. Componente de selector de categorías. -->
                 <div class="categorias"> <!-- Bloque -->
@@ -112,16 +119,47 @@
                     </select>
                 </div>
                 <!-- 11.Componente de sistema de calificaciones. -->
-                 <div class="calificaciones"> <!-- Bloque -->
+                <div class="calificaciones"> <!-- Bloque -->
                     <div class="calificaciones__rating"> <!-- Elemento -->
-                       1 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
-                       2 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
-                       3 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
-                       4 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
-                       5 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
+                        1 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
+                        2 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
+                        3 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
+                        4 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
+                        5 <input class="calificaciones__rating--modified" type="checkbox" id="calificaciones"> <!-- Modificador -->
                     </div>
-                 </div>
-
+                </div>
+                <!-- 12. Componente de reproductor de video. -->
+                <h1 class="video">Reproductor de Video</h1> <!-- Bloque -->
+                <video class="video__source" width="360" height="240" controls> <!-- Elemento -->
+                    <source class="video__source--modified"
+                    src="Assets/Una vez pobre, ¿siempre pobre DW Documental - DW Documental (360p, h264).mp4" type="video/mp4"> 
+                    <!-- Modificador -->
+                </video>
+                <h2 class="video">Mis Colegas - Ska-P</h2> <!-- Bloque -->
+                <p class="video">Disfruta del videoclip de "Mis Colegas" de Ska-P.</p> <!-- Bloque -->
+                <video class="video__source" width="360" height="240" controls> <!-- Elemento -->
+                    <source class="video__source--modified" src="Assets/Ska-P - Mis Colegas (Videoclip) - SkaPVEVO (480p, h264).mp4"
+                    type="video/mp4"> <!-- Modificador -->
+                </video>
+                <!-- 13. Componente de barra lateral sidebar. -->
+                <aside class="sidebar"> <!-- Bloque -->
+                    <h3 class="sidebar__title">Barra Lateral</h3> <!-- Elemento -->
+                    <ul class="sidebar__menu"> <!-- Elemento -->
+                        <li class="sidebar__item"><a href="#link1" class="sidebar__link">Enlace 1</a></li> <!-- Elemento -->
+                        <li class="sidebar__item--modified">
+                            <a href="#link2" class="sidebar__link--modified">Enlace 2</a></li> <!-- Modificador -->
+                        <li class="sidebar__item--modified">
+                            <a href="#link3" class="sidebar__link--modified">Enlace 3</a></li> <!-- Modificador -->
+                    </ul>
+                </aside>
+                <!-- 15. Componente de publicación en blog. -->
+                <article class="blog-post"> <!-- Bloque -->
+                    <h2 class="blog-post__title">Título de la Publicación</h2> <!-- Elemento -->
+                    <p class="blog-post__content"> <!-- Elemento -->
+                        Este es el contenido de la publicación del blog.
+                        Aquí puedes escribir sobre cualquier tema que desees compartir.</p> <!-- Elemento -->
+                    <a href="#" class="blog-post__read-more--modified">Leer más</a> <!-- Modificador -->
+                </article>
         </header>
 </body>
 </html>
